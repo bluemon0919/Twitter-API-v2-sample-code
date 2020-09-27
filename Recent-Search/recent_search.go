@@ -39,8 +39,8 @@ func connectToEndpoint(url string, bearerToken string) []byte {
 	}
 	defer resp.Body.Close()
 
-	byteArray, _ := ioutil.ReadAll(resp.Body)
-	return byteArray
+	bytes, _ := ioutil.ReadAll(resp.Body)
+	return bytes
 }
 
 func main() {
